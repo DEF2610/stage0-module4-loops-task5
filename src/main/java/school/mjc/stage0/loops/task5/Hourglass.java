@@ -6,9 +6,10 @@ public class Hourglass {
             if (i < height / 2 + 1) {
                 for (int j = 1; j <= height; j++) {
                     if (j >= i) {
-                        if (j == height - i + 2)
-                            break;
-                        System.out.print(8);
+                        if (j >= height - i + 2)
+                            System.out.print(" ");
+                        else
+                            System.out.print(8);
                     } else
                         System.out.print(" ");
                 }
@@ -17,8 +18,9 @@ public class Hourglass {
                 for (int j = 1; j <= height; j++) {
                     if (j > height - i) {
                         if (j > i)
-                            break;
-                        System.out.print(8);
+                            System.out.print(" ");
+                        else
+                            System.out.print(8);
                     } else
                         System.out.print(" ");
                 }
